@@ -14,7 +14,7 @@
     <h1>List of Accounts</h1>
     {% for i in accounts%}
     <ul>
-        <li><strong>{{i}}</strong></li>
+        <li><strong>Owner is  {{i.ownerName}},Account Number: {{i.accountNumber}} ,Balance in Account is :{{i.balance}}</strong></li>
 
     </ul> 
     {% endfor %}
@@ -22,7 +22,7 @@
     <h1>List of Cards</h1>
     {% for i in cards %}
     <ul>
-        <li><strong>{{i}}</strong></li>
+        <li><strong>Card Number Is : {{i.cardNumber}}, For Account :{{i.cardAccount.accountNumber}}</strong></li>
 
     </ul> 
     {% endfor %}

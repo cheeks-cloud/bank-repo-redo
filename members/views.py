@@ -10,7 +10,7 @@ def home(request):
     accounts = memberAccounts.objects.all()
     cards = membercardnum.objects.all()
     print(accounts)
-    return render( request, "home.html", {'members': members ,'accounts':list(accounts) ,'cards':cards})
+    return render( request, "home.html", {'members': members ,'accounts':list(accounts) ,'cards':list(cards)})
 
 
 
