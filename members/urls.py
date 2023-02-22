@@ -5,7 +5,7 @@ from rest_framework import routers
 
 
 urlpatterns = [
-    path('',home,name='home'),
+    path('',views.home,name='home'),
   
 
 ]

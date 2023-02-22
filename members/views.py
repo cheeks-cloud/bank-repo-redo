@@ -4,12 +4,13 @@ from rest_framework import viewsets
 from .forms import *
 from rest_framework_swagger.views import get_swagger_view
 from django.urls import include, re_path
+from django.shortcuts import render,redirect
 
-schema_view = get_swagger_view(title='Bank API')
+def home(request):
+    members = Member.objects.all()
+    return render( request, "home.html", {'members': members})
 
-urlpatterns = [
-    re_path(r'^$', schema_view)
-]
+
 
 class MembersViewSet(viewsets.ModelViewSet):
     """
