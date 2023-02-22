@@ -4,18 +4,27 @@
 </head>
 <body>
     <h1>List of Members</h1>
-    {% for i in response %}
-    <strong>{{i.member}} ,</strong>
+    {% for i in members %}
+    <ul>
+        <li><strong>{{i}}</strong></li>
+
+    </ul> 
     {% endfor %}
 
     <h1>List of Accounts</h1>
-    {% for i in response %}
-    <strong>{{i.account}} ,</strong>
+    {% for i in accounts%}
+    <ul>
+        <li><strong>{{i}}</strong></li>
+
+    </ul> 
     {% endfor %}
 
     <h1>List of Cards</h1>
-    {% for i in response %}
-    <strong>{{i.card}} ,</strong>
+    {% for i in cards %}
+    <ul>
+        <li><strong>{{i}}</strong></li>
+
+    </ul> 
     {% endfor %}
 </body>
 </html>

@@ -17,7 +17,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('' ,include(router.urls)),
     path('', include('members.urls')),
-    # path('', include('swagger_ui.urls')),
 
  
    

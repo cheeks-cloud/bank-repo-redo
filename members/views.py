@@ -7,7 +7,10 @@ from django.shortcuts import render,redirect
 
 def home(request):
     members = Member.objects.all()
-    return render( request, "home.html", {'members': members})
+    accounts = memberAccounts.objects.all()
+    cards = membercardnum.objects.all()
+    print(accounts)
+    return render( request, "home.html", {'members': members ,'accounts':list(accounts) ,'cards':cards})
 
 
 
